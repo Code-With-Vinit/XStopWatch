@@ -32,10 +32,10 @@ function App() {
   function formatTime(){
 
     // const ms = Math.floor((time%1000)/10);
-    const s = Math.floor((time/1000)%60).toString().padStart(2,"0");
+    const s = Math.floor((time/1000)%60);
     const m = Math.floor((time/(1000*60))%60);
 
-    return `${m}:${s}`;
+    return `${m}:${s.toString().padStart(2, '0')}`;
   }
   
 
