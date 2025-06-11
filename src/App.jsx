@@ -43,7 +43,7 @@ function App() {
     <>
       <h1>Stopwatch</h1>
 
-      <>Time :  {formatTime()}</>
+      <>Time: {formatTime()}</>
       <br/>
       <br/>
       <button onClick={handleStart}>
